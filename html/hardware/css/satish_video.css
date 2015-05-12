@@ -30,6 +30,8 @@
 .video1:hover{
   height: 760px;
   width: 1280px;
+   -webkit-animation: mymove 5s ; /* Chrome, Safari, Opera */
+	animation: mymove 5s infinite;
 }
 #rotate-y .panel {
   -moz-transition: height 5s, width 5s;
@@ -43,3 +45,5 @@
   -o-transform: rotateY( 20deg );
   transform: rotateY( 20deg );
 }
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(180deg);}
