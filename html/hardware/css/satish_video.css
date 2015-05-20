@@ -45,5 +45,21 @@
   -o-transform: rotateY( 20deg );
   transform: rotateY( 20deg );
 }
+
+@media all and (max-width: 800px){
+
+	body { background-color: black;}
+	.video1 {-webkit-animation: mymove1 5s infinite alternate;  
+	
+	}
+}
+@-webkit-keyframes mymove1 {
+    0% { -webkit-transform: translateY(0); }
+    100% { -webkit-transform: translateY(-1700px); }
+}
+
 @-webkit-keyframes mymove {
     50% {-webkit-transform: rotate(180deg);}
+}
+   
+
